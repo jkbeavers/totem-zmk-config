@@ -20,15 +20,9 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: totem_dongle
-    snippet: zmk-usb-logging
+    shield: totem_left
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
-    shield: totem_left
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    snippet: zmk-usb-logging
-  - board: seeeduino_xiao_ble
     shield: totem_right
-    snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
     shield: settings_reset
