@@ -11,12 +11,12 @@
 #define OVR   5
 &mt {
     flavor = "tap-preferred";
-	tapping-term-ms = <200>;
-};
-&sl {
-    release-after-ms = <150>;
+	tapping-term-ms = <150>;
 	quick-tap-ms = <150>;
     require-prior-idle-ms = <125>;
+};
+&sl {
+    release-after-ms = <200>;
 };
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
