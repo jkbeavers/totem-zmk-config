@@ -11,9 +11,12 @@
 #define OVR   5
 &mt {
     flavor = "tap-preferred";
+	tapping-term-ms = <200>;
 };
 &sl {
-    release-after-ms = <200>;
+    release-after-ms = <150>;
+	quick-tap-ms = <150>;
+    require-prior-idle-ms = <125>;
 };
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
@@ -116,7 +119,7 @@
         &kp EXCL     &kp AT         &kp HASH       &kp DOLLAR    &kp PERCENT                  &kp CARET                  &kp AMPERSAND          &kp ASTRK            &kp DQT               &kp SEMI 
         &kp PLUS     &kp DOT        &kp MINUS      &kp LBKT      &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS      &kp RBKT               &kp EQUAL            &kp UNDER             &kp BSPC 
 &none   &kp GRAVE    &kp TILDE      &kp PIPE       &kp FSLH      &kp LBRC                     &kp RBRC                   &kp COLON              &kp LT               &kp GT                &kp QMARK            &none
-                                       &kp EXCL       &kp SPACE     &kp ENTER                    &caps_toggle               &kp SPACE              &colw
+                                       &kp BSLH       &kp SPACE     &kp ENTER                    &caps_toggle               &kp SPACE           &trans
             >;
             display-name = "syms";
         };
